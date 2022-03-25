@@ -1,7 +1,7 @@
 # UNH-IT718-k8s
 Lab to support K8s discussion in class
 
-It is best you have completed the steps in [Github UNH-IT718-docker]().  The result being a Docker Hub repo of YOUR_NAME/hpa-example:v1 hosted on Docker Hub.  If not this lesson pulls from the default repo of billiardyoda/hpa-example.
+It is best you have completed the steps in [Github UNH-IT718-docker](https://github.com/kengraf/UNH-IT718-docker).  The result being a repo of YOUR_NAME/hpa-example:v1 hosted on Docker Hub.  If not, this lesson without edits pulls from the default repo of billiardyoda/hpa-example.
 
 ## Lesson 
 Now that we have a deploy focused Docker image, it is time to learn about scaling it with Kubernetes.  
