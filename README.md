@@ -47,7 +47,7 @@ docker run --rm -it -v ~/.kube/config:/root/.kube/config quay.io/derailed/k9s
 ```
 
 ```
-# Generate load in a separate terminal
+# Generate load in a separate terminal, it will take a minute or two to fully scale up and down.  
 kubectl run -i --tty load-generator --rm --image=busybox --restart=Never -- /bin/sh -c "while sleep 1; do wget -q -O- http://hpa-example/dowork; done"
 ```
 
