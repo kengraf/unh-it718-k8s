@@ -30,14 +30,13 @@ cd unh-it718-k8s
 Apply a "yaml" to deploy what is needed
 ```
 kubectl apply -f hpa-example.yaml
-kubectl get -f hpa-example.yaml
-kubectl autoscale deployment hpa-example --cpu-percent=50 --min=1 --max=10
-kubectl get hpa
-kubectl run -i --tty load-generator --rm --image=busybox --restart=Never -- /bin/sh -c "while sleep 0.01; do wget -q -O- http://hpa-example; done"
 ```
 
 Commands to check status
 ```
+kubectl get -f hpa-example.yaml
+
+# Review separate parts
 kubectl get deployments
 kubectl get services
 kubectl rollout status deployment/hpa-example
@@ -49,7 +48,7 @@ docker run --rm -it -v ~/.kube/config:/root/.kube/config quay.io/derailed/k9s
 
 ```
 # Generate load in a separate terminal
-kubectl run -i --tty load-generator --rm --image=busybox --restart=Never -- /bin/sh -c "while sleep 1; do wget -b -q -O- http://hpa-example/dowork; done"
+kubectl run -i --tty load-generator --rm --image=busybox --restart=Never -- /bin/sh -c "while sleep 1; do wget -q -O- http://hpa-example/dowork; done"
 ```
 
 
