@@ -21,6 +21,12 @@ gcloud container clusters list
 gcloud container clusters describe hpa-example
 ```
 
+Pull exmaple yaml
+```
+git clone https://github.com/kengraf/unh-it718-k8s.git
+cd unh-it718-k8s
+```
+
 Apply a "yaml" to deploy what is needed
 ```
 kubectl apply -f hpa-example.yaml
