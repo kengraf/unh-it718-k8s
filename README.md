@@ -51,6 +51,13 @@ docker run --rm -it -v ~/.kube/config:/root/.kube/config quay.io/derailed/k9s
 kubectl run -i --tty load-generator --rm --image=busybox --restart=Never -- /bin/sh -c "while sleep 1; do wget -q -O- http://hpa-example/dowork; done"
 ```
 
+Roll an update to fix performance
+```
+kubectl get deployments
+kubectl get pods
+kubectl set image deployments/hpa-example billiardyoda/hpa-example-fast:v1
+
+```
 
 Clean up Kubernetes
 ```
