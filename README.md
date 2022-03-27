@@ -55,7 +55,7 @@ Roll an update to fix performance
 ```
 kubectl get deployments
 kubectl get pods
-kubectl set image deployments/hpa-example billiardyoda/hpa-example-fast:v1
+kubectl set image deployments/hpa-example hpa-example=billiardyoda/hpa-example-fast:v1
 
 ```
 
