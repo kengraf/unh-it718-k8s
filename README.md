@@ -42,7 +42,8 @@ kubectl get services
 kubectl rollout status deployment/hpa-example
 kubectl get rs
 kubectl get pods --show-labels
-# The next command provides a running view of pod usage
+# The next command provides a running view of pod usage   
+# Alternatively, you can monitor the Kubernetes Engine Dashboard in the GCP console
 docker run --rm -it -v ~/.kube/config:/root/.kube/config quay.io/derailed/k9s
 ```
 
