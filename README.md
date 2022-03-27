@@ -16,7 +16,7 @@ gcloud config set compute/zone us-west1-a
 
 Create a new cluster for the deployment
 ```
-gcloud container clusters create hpa-example --num-nodes=4
+gcloud container clusters create hpa-example --num-nodes=2
 gcloud container clusters list
 gcloud container clusters describe hpa-example
 ```
