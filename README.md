@@ -43,10 +43,11 @@ kubectl rollout status deployment/hpa-example
 kubectl get rs
 kubectl get pods --show-labels
 ```
-You can monitor the Kubernetes Engine Dashboard in the GCP console
+You can monitor the Kubernetes Engine Dashboard in the GCP console  
+Alternatively, you can use k9s
 ```
-# Alternatively, you can use k9s
 git clone https://github.com/derailed/k9s
+cd k9s
 make build # This will take a minute
 ./execs/k9s
 ```
