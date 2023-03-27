@@ -13,6 +13,10 @@ Insure your Cloudshell settings are current.  This is needed if you have to reco
 gcloud config set project YOUR_PROJECT_ID
 gcloud config set compute/zone us-east1-b
 ```
+You may need to enable service for your account
+```
+gcloud services enable compute.googleapis.com; gcloud services enable container.googleapis.com
+```
 
 Create a new cluster for the deployment
 ```
