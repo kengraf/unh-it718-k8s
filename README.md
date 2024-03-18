@@ -76,7 +76,7 @@ kubectl delete deployment hpa-example
 kubectl delete hpa hpa-example
 kubectl delete pod load-generator
 gcloud compute forwarding-rules list
-gcloud container clusters delete hpa-example
+gcloud container clusters delete hpa-example --zone=us-east1-b
 ```
 
 
