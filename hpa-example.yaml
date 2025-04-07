@@ -30,6 +30,7 @@ metadata:
   labels:
     run: hpa-example
 spec:
+  type: LoadBalancer
   ports:
   - port: 80
     targetPort: 8090
